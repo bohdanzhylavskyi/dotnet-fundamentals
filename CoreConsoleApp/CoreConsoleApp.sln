@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreetingMessageFormatterLib
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsFormsApp", "..\WindowsFormsApp\WindowsFormsApp.csproj", "{BA997B4A-9683-4D1C-8CF1-D675EB21DD6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp", "..\WpfApp\WpfApp.csproj", "{2CA289AB-1F19-41F2-B5AC-BBFC68D5D33C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BA997B4A-9683-4D1C-8CF1-D675EB21DD6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BA997B4A-9683-4D1C-8CF1-D675EB21DD6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BA997B4A-9683-4D1C-8CF1-D675EB21DD6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CA289AB-1F19-41F2-B5AC-BBFC68D5D33C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CA289AB-1F19-41F2-B5AC-BBFC68D5D33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CA289AB-1F19-41F2-B5AC-BBFC68D5D33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CA289AB-1F19-41F2-B5AC-BBFC68D5D33C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
