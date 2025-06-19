@@ -1,6 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 using GreetingMessageFormatterLib;
 
-namespace WinFormsApp
+namespace WindowsFormsApp
 {
     public partial class Form1 : Form
     {
@@ -16,12 +25,12 @@ namespace WinFormsApp
 
         private void usernameTextBox_TextChanged(object sender, EventArgs e)
         {
-            submitBtn.Enabled = !string.IsNullOrEmpty(usernameTextBox.Text);
+            submitBtn.Enabled = !string.IsNullOrEmpty(usernameTextBox.Text.Trim());
         }
 
         private void submitBtn_Click(object sender, EventArgs e)
         {
-            var username = usernameTextBox.Text;
+            var username = usernameTextBox.Text.Trim();
             var greetingMessage = GreetingMessageFormatter.FormatGreetingMessage(username);
 
             ResetForm();

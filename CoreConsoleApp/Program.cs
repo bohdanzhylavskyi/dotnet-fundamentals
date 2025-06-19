@@ -6,15 +6,26 @@ namespace CoreConsoleApp
     {
         static void Main(string[] args)
         {
-            var username = "Bohdan";
+            var username = ResolveUsernameArg(args);
 
-            PrintGreeting(username);
+            PrintGreetingMessage(username);
         }
 
-        static void PrintGreeting(string username)
+        static void PrintGreetingMessage(string username)
         {
             var greetingMessage = GreetingMessageFormatter.FormatGreetingMessage(username);
             Console.WriteLine(greetingMessage);
+        }
+
+        // simplified solution
+        static string ResolveUsernameArg(string[] args)
+        {
+            if (args.Length == 0)
+            {
+                throw new InvalidOperationException("Username argument was not specified");
+            }
+
+            return args[0];
         }
     }
 }
